@@ -4,9 +4,6 @@
 
 #include <ctime>
 
-//suppress warning
-#pragma warning(disable : 4996)
-#pragma warning(disable : 4244)
 
 //get time in milliseconds
 long long time_ms();
@@ -19,6 +16,11 @@ long long time_ms();
 char * strnstr(const char *s, const char *find, size_t slen);
 
 #if defined(_WIN32)
+//suppress warning
+#pragma warning(disable : 4996)
+#pragma warning(disable : 4244)
+
+
 //remove definition of min max in windows in order to use std::min/std::max with #include <algorith> instead
 #define NOMINMAX
 #include <sys/timeb.h>

@@ -4,7 +4,7 @@
 # C++ compiler 
 CXX     = g++
 OBJDIRP = linux-obj
-PROGRAM = LiveImageGrabber
+PROGRAM = HttpGrabberExample
 LDFLAGS =
 #LIBS = -lpthread
 LIBS =
@@ -41,7 +41,7 @@ LD = $(CXX) -fPIC
 # ------------------------------------------------------------------------
 # Source file groups
 
-SOURCES=compat.cpp HttpDefs.cpp HttpGrabber.cpp HttpMsg.cpp LiveImageGrabber.cpp log.cpp cencode.cpp
+SOURCES=compat.cpp HttpDefs.cpp HttpGrabber.cpp HttpMsg.cpp HttpGrabberExample.cpp log.cpp cencode.cpp
 
 # ------------------------------------------------------------------------
 # Object file groups
