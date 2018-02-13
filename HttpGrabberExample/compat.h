@@ -4,6 +4,10 @@
 
 #include <ctime>
 
+//suppress warning
+#pragma warning(disable : 4996)
+#pragma warning(disable : 4244)
+
 //get time in milliseconds
 long long time_ms();
 

@@ -129,7 +129,7 @@ int HttpMsg::ParseSocketResponse(const char* buf, unsigned int size, unsigned in
 					uint64_t timeStampMilliseconds = 0;
 					consumedBytes += (1+dataEndAddr - (unsigned char*) bufParsePos);//the 0xd9 byte was read
 					//try to read the time stamp but not more than 200 bytes
-					ParseAxisJpegHeader(dataStartAddr, std::min(dataEndAddr-dataStartAddr, 200), timeStampMilliseconds);
+					ParseAxisJpegHeader(dataStartAddr, std::min((int) (dataEndAddr-dataStartAddr), 200), timeStampMilliseconds);
 					if (timeStampMilliseconds != 0) {
 						log_info("axis time stamp: %lld", timeStampMilliseconds);
 					}

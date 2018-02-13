@@ -6,6 +6,7 @@ For details, see http://sourceforge.net/projects/libb64
 */
 
 #include "cencode.h"
+#include "compat.h"
 #include <string.h>
 #include <inttypes.h>
 #include <stdarg.h>

@@ -45,7 +45,7 @@ int _log(TheLogLevel level, const char* filename, int line, const char *format, 
         level = LOG_UNDEFINED;
 
     // fill padding for left align source info
-    int padLen = FLENAME_ALIGNMENT - strlen(msg);
+    int padLen = FLENAME_ALIGNMENT - (int) strlen(msg);
     if (padLen > 0){
         padding[padLen--] = '\0';
     
